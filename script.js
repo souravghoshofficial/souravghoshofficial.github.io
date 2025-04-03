@@ -33,4 +33,3 @@ sidenavItem.forEach(item => (item.addEventListener("click", () => {
         hambarger.classList.remove("x")
     })
 ))
-
