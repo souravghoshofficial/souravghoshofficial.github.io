@@ -27,6 +27,10 @@ hambarger.addEventListener("click", () => {
 
 sidenavItem.forEach(item => (item.addEventListener("click", () => {
         sidenav.style.animation = "sidenavHide 0.3s linear forwards";
+        line2.style.marginTop = "7px";
+        line1.style.rotate = "0deg";
+        line2.style.rotate = "0deg"
+        hambarger.classList.remove("x")
     })
 ))
 

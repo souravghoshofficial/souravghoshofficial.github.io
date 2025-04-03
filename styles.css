@@ -49,6 +49,20 @@ nav{
     transform: translateX(-50%);
 }
 
+#ham-wrapper{
+    position: fixed;
+    width: 90%;
+    padding: 16px 24px;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .gradiant-text{
     background: linear-gradient(to right, #D6C7FF, #AB8BFF);
     background-clip: text; 
@@ -89,10 +103,6 @@ nav ul a::after:hover{
 
 #hambarger{
     display: none;
-    position: fixed;
-    top: 5.6%;
-    right: 9%;
-    z-index: 300;
 }
 
 #hambarger .line{
