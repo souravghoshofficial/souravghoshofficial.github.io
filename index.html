@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sourav Ghosh | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/profile-pic.png">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,7 +21,7 @@
         </div>
       </div>
       <nav>
-        <a id="logo" class="gradiant-text" href="#"
+        <a class="logo gradiant-text" href="#"
           >Sourav<span style="color: white">.</span></a
         >
         <ul>
@@ -39,7 +44,13 @@
           <div id="home-left">
             <div>
               <h3 id="hello">Hello 👋</h3>
-              <h1 id="sourav">I'M Sourav</h1>
+              <h1 id="sourav">I'M <span class="gradiant-text">Sourav Ghosh</span>,</h1>
+              <h1 class="home-text">Full Stack Developer</h1>
+              <h1 class="home-text">Based in <span class="india-text">INDIA</span>.</h1>
+              <div style="margin-top: 24px;">
+                <a class="home-btn" style="margin-right: 8px;" href="#">View Latest Projects</a>
+              <a class="home-btn" id="resume-btn" href="https://drive.google.com/file/d/1cz2YeE_3A7r-lP3IU5DpDWdIYrupuPru/view?usp=drivesdk" target="_blank">Resume<i class="ri-arrow-right-s-line"></i></a>
+              </div>
             </div>
           </div>
           <div id="home-right">
@@ -51,24 +62,66 @@
           </div>
         </div>
       </section>
+      <div id="showcase">
+        <h3>UI/UX Designer <i class="ri-gemini-fill"></i> Fontend Developer <i class="ri-gemini-fill"></i> Full Stack Developer <i class="ri-gemini-fill"></i> UI/UX Designer <i class="ri-gemini-fill"></i> Fontend Developer <i class="ri-gemini-fill"></i> Full Stack Developer <i class="ri-gemini-fill"></i>UI/UX Designer <i class="ri-gemini-fill"></i> Fontend Developer <i class="ri-gemini-fill"></i> Full Stack Developer <i class="ri-gemini-fill"></i>UI/UX Designer <i class="ri-gemini-fill"></i> Fontend Developer <i class="ri-gemini-fill"></i> Full Stack Developer <i class="ri-gemini-fill"></i></h3>
+      </div>
       <section id="about">
         <div id="about-section">
-          <h1>About</h1>
+          <p style="text-align: center; font-size: 24px;" class="gradiant-text">About Me</p>
+          <div class="wrapper">
+            <div id="about-me">
+              <h3><i class="ri-user-3-line"></i>Who Am I</h3>
+              <p>Hi! I'm Sourav Ghosh, a passionate MCA student at <a class="gradiant-text" href="https://jadavpuruniversity.in" target="_blank">Jadavpur University</a>, with a love for building cool stuff with code and a dream of becoming a great software engineer.</p>
+              <p>I'm experienced in full-stack web development and have built projects using React, Node.js, and MySQL. I love turning ideas into real applications that people can use.</p>
+              <p>Some of my projects include a Learning Management System and a password generator app. I also ranked 22nd in JECA, coming from a non-CS background.</p>
+            </div>
+            <div id="education">
+              <h3> <i class="ri-graduation-cap-fill"></i>Education</h3>
+              <div class="education-wrapper">
+                <p>2024 - 2026</p>
+                <h3>Jadavpur University</h3>
+                <h4>Master of Computer Application</h4>
+              </div>
+              <div class="education-wrapper">
+                <p>2021 - 2024</p>
+                <h3>Narajole Raj College</h3>
+                <h4>Bachelor of Science</h4>
+              </div>
+              <div class="education-wrapper">
+                <p>2021 - 2019</p>
+                <h3>Narajole Mahendra Academy</h3>
+                <h4>Higher Secondary</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="projects">
         <div id="projects-section">
-          <h1>Projects</h1>
         </div>
       </section>
       <section id="contact">
         <div id="contact-section">
-          <h1>Contact</h1>
+          <h1></h1>
         </div>
       </section>
       <footer>
-
+        <div id="footer-section">
+          <h2 class="logo"><span class="gradiant-text">Sourav</span>.</h2>
+          <p style="margin: 4px 0;">Let's connect</p>
+         <div id="socials" style="margin: 8px 0 16px 0;">
+          <a href="https://linkedin.com/in/souravghosh121"><i class="ri-linkedin-box-fill"></i></a>
+          <a href="https://x.com/souravghosh121"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://github.com/souravghoshofficial"><i class="ri-github-fill"></i></a>
+          <a href="https://instagram.com/souravghoshofficial"><i class="ri-instagram-fill"></i></a>
+         </div>
+         <hr style="margin: 5px 0;">
+         <p style="text-align: center; margin-bottom: 20px;">Made With ❤️ By <a id="made-with-text" href="https://linkedin.com/in/souravghosh121">Sourav</a></p>
+        </div>
+        
       </footer>
+      <div id="footer-end">  
+      </div>
     </main>
     <script src="script.js"></script>
   </body>

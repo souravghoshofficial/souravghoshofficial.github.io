@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,9 @@ html,body{
     height: 100%;
     background-color: #030014;
     color: white;
-    font-family: "DM Sans", serif;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+  
 }
 
 main{
@@ -31,6 +35,7 @@ a{
 
 nav{
     width: 60%;
+    z-index: 20;
     padding: 16px 48px;
     background: rgba( 5, 5, 5, 0.25 );
     box-shadow: 0 5px 24px 0 rgba( 31, 38, 135, 0.37 );
@@ -69,7 +74,13 @@ nav{
     color: transparent;
 }
 
-#logo{
+.india-text{
+    background: linear-gradient(to top, #046A38, #ffffff , #FF671F);
+    background-clip: text; 
+    color: transparent;
+}
+
+.logo{
     font-family: "DM Sans", serif;
     font-weight: bold;
     font-size: 24px;
@@ -111,11 +122,12 @@ nav ul a:hover{
 
 aside{
     position: fixed;
+    z-index: 100;
     top: 0;
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: #030014;
+    background-color: #AB8BFF;
 }
 
 aside div{
@@ -134,6 +146,11 @@ aside div a{
     font-size: 24px;
 }
 
+#footer-end{
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #D6C7FF, #AB8BFF);
+}
 
 @keyframes sidenavReveal{
    0%{
@@ -237,12 +254,16 @@ aside div a{
 
 
 
-section{
+section , footer{
     width: 100%;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+#home{
+    min-height: 100vh;
 }
 
 #home-main{
@@ -258,41 +279,121 @@ section{
     justify-content: center;
 }
 
+#home-left{
+    width: 100%;
+}
+
 #profile-img{
     margin: 0 auto;
-    width: 25vw;
-    padding: 4px;
-    border: 2px solid #fff;
+    width: 20vw;
     border-radius: 50%;
+    filter: drop-shadow(0 0 0.75rem #AB8BFF);
 }
 
 
 #hello{
-    font-size: 4vw;
+    font-size: 2vw;
+    margin-bottom: 2px;
 }
 
 #sourav{
-    font-size: 6vw;
+    font-size: 4vw;
+    font-weight: 600;
 }
 
-#about-section, #projects-section , #contact-section{
+.home-text{
+    margin-top: 5px;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.home-btn{
+    padding: 8px 16px;
+    background: #fff;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+
+#resume-btn{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+#about-section, #projects-section , #contact-section , #footer-section{
     margin-top: 24px;
     width: 90%;
 }
 
-footer{
-    margin: 20px auto;
+#socials{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
 }
 
-
- /* #line1{
-    transform: rotate(45deg);
+#socials a i:hover{
+    color: #AB8BFF;
 }
 
-#line2{
-    margin-top: -2px;;
-    transform: rotate(-45deg);
-}  */
+#made-with-text{
+    color: #D6C7FF;
+}
+#made-with-text:hover{
+    color: #AB8BFF;
+}
+
+#showcase{
+    overflow: hidden;
+    margin: 24px 0;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background: #AB8BFF;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about-me{
+    width: 40%;
+    padding: 32px 24px;
+    border-radius: 5px;
+    background: #100c2a;
+}
+
+#about-me p{
+    margin-top: 24px;
+}
+
+#education{
+    width: 40%;
+    padding: 32px 24px;
+    border-radius: 5px;
+    background: #100c2a;
+}
+
+.education-wrapper{
+    margin-top: 24px;
+}
+
+#about i{
+    font-size: 28px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #AB8BFF;
+    margin-right: 8px;
+}
 
 @media screen and (max-width: 768px) {
     nav{
@@ -306,18 +407,32 @@ footer{
         display: flex;
     }
     #home-main{
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: column-reverse;
+        gap: 50px;
     }
     #profile-img{
         width: 50vw;
     }
 
     #hello{
-        font-size: 6vw;
+        font-size: 5vw;
     }
     
     #sourav{
-        font-size: 8vw;
+        font-size: 7vw;
+    }
+    .home-text{
+        font-size: 6vw;
+    }
+    .home-btn{
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .wrapper{
+        flex-direction: column;
+        gap: 16px;
+    }
+    #education , #about-me{
+        width: 100%;
     }
 }
