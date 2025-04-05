@@ -357,7 +357,7 @@ footer {
   gap: 5px;
   margin: 24px 0;
   width: 100%;
-  padding: 10px 5px;
+  padding: 16px 0;
   background: #ab8bff;
 }
 
@@ -463,14 +463,14 @@ footer {
 
 .project-wrapper {
   border-radius: 8px;
-  padding: 16px;
+  padding: 24px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 5px 24px 0 rgba(31, 38, 135, 0.37);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .project-wrapper:hover{
-    scale: 1.1;
+    scale: 1.05;
 }
 
 .project-img-container {
@@ -480,9 +480,9 @@ footer {
 }
 
 .project-img {
-  margin: 32px 32px -24px 32px;
+  margin: 32px 32px -32px 32px;
   width: 80%;
-  rotate: 3deg;
+  rotate: 2.5deg;
   border-radius: 8px;
 }
 
@@ -531,14 +531,72 @@ footer {
   font-size: 15px;
 }
 
-#projects a {
+#project-container a {
   color: #d6c7ff;
 }
-#projects a i {
+#project-container a i {
   font-size: 20px;
 }
-#projects a:hover {
+#project-container a:hover {
   color: #ab8bff;
+}
+
+
+
+.contact-wrapper{
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contact-left{
+    width: 65%;
+    padding-right: 24px;
+}
+
+.contact-box{
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contact-title{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.contact-description{
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.contact-icon i{
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #ab8bff;
+    margin-right: 8px;
+}
+
+#see-all-projects{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#see-all-projects-btn{
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 4px;
+    color: #000;
+    transition: all 0.3s;
+}
+#see-all-projects-btn:hover{
+    background: #ab8bff;
+    color: #fff;
 }
 
 @media screen and (max-width: 1080px) {
@@ -628,5 +686,17 @@ footer {
   .skill-wrapper{
     width: 100%;
   }
+
+  .contact-wrapper{
+    flex-direction: column;
+  }
+
+  #contact-left, #contact-right{
+    width: 100%;
+}
+
+.contact-title{
+    font-size: 28px;
+}
 }
 
