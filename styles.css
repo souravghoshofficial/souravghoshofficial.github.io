@@ -349,12 +349,19 @@ section , footer{
 
 #showcase{
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5px;
     margin: 24px 0;
     width: 100%;
-    height: 30px;
-    padding: 5px;
+    padding: 10px 5px;
     background: #AB8BFF;
-    overflow-x: hidden;
+}
+
+#showcase h3{
+    font-size: 24px;
+    text-wrap: nowrap;
 }
 
 .wrapper{
@@ -362,14 +369,25 @@ section , footer{
     margin-top: 24px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+}
+
+#about-img-containter{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-img{
+    width: 400px;
+    border-radius: 8px;
 }
 
 #about-me{
-    width: 40%;
+    width: 90%;
     padding: 32px 24px;
-    border-radius: 5px;
-    background: #100c2a;
+    border-radius: 8px;
+    background: #0f172a;
 }
 
 #about-me p{
@@ -377,10 +395,11 @@ section , footer{
 }
 
 #education{
-    width: 40%;
+    margin-top: 16px;
+    width: 90%;
     padding: 32px 24px;
-    border-radius: 5px;
-    background: #100c2a;
+    border-radius: 8px;
+    background: #0f172a;
 }
 
 .education-wrapper{
@@ -393,6 +412,13 @@ section , footer{
     border-radius: 50%;
     background-color: #AB8BFF;
     margin-right: 8px;
+}
+
+#skills-wrapper img{
+    width: 64px;
+    padding: 8px;
+    background: white;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -433,6 +459,23 @@ section , footer{
         gap: 16px;
     }
     #education , #about-me{
+        width: 100%;
+    }
+
+    #skills-wrapper img{
+        width: 48px;
+        padding: 5px;
+    }
+
+    #showcase h3{
+        font-size: 16px;
+    }
+
+    #about-img-containter{
+        width: 100%;
+    }
+
+    #about-img{
         width: 100%;
     }
 }
