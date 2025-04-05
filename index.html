@@ -111,13 +111,12 @@
             </div>
             <div>
               <div id="about-me">
-                <h3><i class="ri-user-3-line"></i>Who Am I</h3>
-                <p>Hi! I'm Sourav Ghosh, a passionate MCA student at <a style="font-weight: bold;" class="gradiant-text" href="https://jadavpuruniversity.in" target="_blank">Jadavpur University</a>, with a love for building cool stuff with code and a dream of becoming a great software engineer.</p>
+                <h3 class="card-title"><i class="ri-user-3-line"></i>Who Am I</h3>
+                <p>Hi! I'm Sourav Ghosh, a passionate MCA student at <a style="font-weight: bold;" class="gradiant-text" href="https://jadavpuruniversity.in" target="_blank">Jadavpur University</a>, <br> with a love for building cool stuff with code and a dream of becoming a great software engineer.</p>
                 <p>I'm experienced in full-stack web development and have built projects using React, Node.js, Express.js and PostgreSQL. I love turning ideas into real applications that people can use.</p>
-                <p>Some of my projects include a Learning Management System and a password generator app. I also ranked 22nd in WBJECA - 2024, coming from a non-CS background.</p>
               </div>
               <div id="education">
-                <h3> <i class="ri-graduation-cap-fill"></i>Education</h3>
+                <h3 class="card-title"> <i class="ri-graduation-cap-fill"></i>Education</h3>
                 <div class="education-wrapper">
                   <p>2024 - 2026</p>
                   <h3><a class="gradiant-text" href="https://jadavpuruniversity.in" target="_blank">Jadavpur University</a></h3>
@@ -128,29 +127,29 @@
                   <h3><a class="gradiant-text" href="https://www.narajolerajcollege.ac.in" target="_blank">Narajole Raj College</a></h3>
                   <h4>Bachelor of Science</h4>
                 </div>
-                <div class="education-wrapper">
-                  <p>2021 - 2019</p>
-                  <h3 class="gradiant-text">Narajole Mahendra Academy</h3>
-                  <h4>Higher Secondary</h4>
-                </div>
               </div>
             </div>
+          </div> 
           </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div id="skills-section">
           <p style="text-align: center; font-size: 12px; margin-top: 32px;">Explore My</p>
           <h4 style="text-align: center; font-size: 24px;" class="gradiant-text">Skills</h4>
-          <div id="skills-wrapper">
-            <div>
-              <h2>Programming Languages</h2>
-              <div>
+          <div id="skills-container">
+            <div class="skill-wrapper">
+              <h3 class="card-title"><i class="ri-code-box-fill"></i> Programming Languages</h3>
+              <div  class="skill-logo">
                 <img src="./assets/c-logo.svg" alt="c programming language">
                 <img src="./assets/cpp-logo.svg" alt="cpp programming language">
                 <img src="./assets/js-logo.svg" alt="javascript programming language">
                 <img src="./assets/python-logo.svg" alt="python programming language">
               </div>
             </div>
-            <div>
-              <h2>Web Development</h2>
-              <div>
+            <div class="skill-wrapper">
+              <h3 class="card-title"><i class="ri-computer-fill"></i> Web Development</h3>
+              <div  class="skill-logo">
                 <img src="./assets/html-logo.svg" alt="html 5 logo">
                 <img src="./assets/css-logo.svg" alt="css 3 logo">
                 <img src="./assets/js-logo.svg" alt="javascript programming language">
@@ -161,16 +160,15 @@
                 <img src="./assets/postgresql-icon.svg" alt="postgresql logo">
               </div>
             </div>
-            <div>
-              <h2>Developer Tools</h2>
-              <div>
+            <div class="skill-wrapper">
+              <h3 class="card-title"><i class="ri-terminal-box-fill"></i> Developer Tools</h3>
+              <div  class="skill-logo">
                 <img src="./assets/vs-code-logo.svg" alt="vs code logo">
                 <img src="./assets/git-logo.svg" alt="git logo">
                 <img src="./assets/github-logo.svg" alt="github logo">
                 <img src="./assets/postman-icon.svg" alt="postman logo">
               </div>
             </div>
-          </div>
         </div>
       </section>
       <section id="projects">
@@ -179,7 +177,7 @@
           <h4 style="text-align: center; font-size: 24px;" class="gradiant-text">Projects</h4>
           <div id="project-container">
             <div class="project-wrapper">
-            <div class="project-img-container">
+            <div data-tilt class="project-img-container">
               <img class="project-img" src="./assets/todox.png" alt="todox project">
             </div>
             <div class="project-text-container">
@@ -221,7 +219,7 @@
             </div>
             <div class="project-text-container">
               <h3 class="project-title gradiant-text">Portfolio Website</h3>
-              <p class="project-description">A simple React + Tailwind CSS app to generate strong, customizable passwords with options for length, alphanumeric, and special characters.
+              <p class="project-description">A responsive website built with HTML, CSS, and JavaScript to showcase my projects, skills, and contact details in a clean and user-friendly layout.
               </p>
               <div class="project-bottom">
                 <div class="tech-stack">
@@ -258,8 +256,6 @@
         </div>
         
       </footer>
-      <div id="footer-end">  
-      </div>
     </main>
     <script src="script.js"></script>
   </body>
