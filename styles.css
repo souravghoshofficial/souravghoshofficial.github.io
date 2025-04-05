@@ -336,7 +336,18 @@ section , footer{
     font-size: 24px;
 }
 
-#socials a i:hover{
+#socials a{
+    height: 48px;
+    width: 48px;;
+    padding: 12px;
+    background-color: #0f172a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#socials a:hover i{
     color: #AB8BFF;
 }
 
@@ -421,6 +432,58 @@ section , footer{
     border-radius: 50%;
 }
 
+.project-wrapper{
+    margin-top: 32px;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 5px 24px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.project-img-container{
+    overflow: hidden;
+    background: #AB8BFF;
+    border-radius: 8px;
+}
+
+.project-img{
+    margin: 32px 32px -24px 32px;;
+    width: 250px;
+    rotate: 3deg;
+    border-radius: 8px;
+}
+
+.project-text-container{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.project-bottom{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tech-stack{
+    display: flex;
+}
+
+.tech-stack img{
+    width: 48px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #030014;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.tech-stack-2 , .tech-stack-3{
+    margin-left: -8px;
+}
+
 @media screen and (max-width: 768px) {
     nav{
         width: 90%;
@@ -477,5 +540,15 @@ section , footer{
 
     #about-img{
         width: 100%;
+    }
+
+    #socials a{
+        height: 32px;
+        width: 32px;;
+        padding: 16px;
+    }
+
+    .tech-stack img{
+        width: 40px;
     }
 }
