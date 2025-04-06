@@ -3,6 +3,10 @@ const sidenav = document.getElementById("sidenav");
 const sidenavItem = document.querySelectorAll(".sidenav-item");
 const line1 = document.getElementById("line1");
 const line2 = document.getElementById("line2");
+const currentYearSpan = document.getElementById("current-year")
+
+let currentYear = new Date().getFullYear();
+currentYearSpan.innerText = currentYear;
 
 
 hambarger.addEventListener("click", () => {
