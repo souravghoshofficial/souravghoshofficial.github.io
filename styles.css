@@ -25,6 +25,7 @@ main {
   position: relative;
   overflow-y: scroll;
   scrollbar-width: none;
+  user-select: none;
 }
 
 a {
@@ -364,20 +365,36 @@ footer {
 }
 
 #showcase {
-  overflow: hidden;
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 5px;
+  --gap: 8px;
+  gap: var(--gap);
   margin: 24px 0;
   width: 100%;
   padding: 16px 0;
   background: #ab8bff;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: 600;
 }
 
-#showcase h3 {
-  font-size: 24px;
-  text-wrap: nowrap;
+#showcase ul{
+  list-style: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  animation: scroll 20s linear infinite;
+}
+
+#showcase:hover ul{
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to{
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
 
 #about-section{
@@ -692,7 +709,7 @@ footer {
     font-size: 16px;
   }
   #see-all-projects{
-    margin-top: 20px;
+    margin-top: 36px;
   }
   #see-all-projects-btn{
     font-size: 16px;
@@ -715,9 +732,6 @@ footer {
     padding: 5px;
   }
 
-  #showcase h3 {
-    font-size: 16px;
-  }
 
   #about-img-containter {
     width: 100%;
@@ -778,6 +792,11 @@ footer {
 
 #contact-right{
   margin-bottom: 32px;
+}
+
+#showcase{
+  padding: 12px 0;
+  font-size: 20px;
 }
 
 }

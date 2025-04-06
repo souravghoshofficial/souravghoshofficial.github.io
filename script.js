@@ -3,6 +3,10 @@ const sidenav = document.getElementById("sidenav");
 const sidenavItem = document.querySelectorAll(".sidenav-item");
 const line1 = document.getElementById("line1");
 const line2 = document.getElementById("line2");
+const main = document.getElementById("main");
+const moveItem = document.querySelectorAll(".move-item")
+
+
 
 
 hambarger.addEventListener("click", () => {
