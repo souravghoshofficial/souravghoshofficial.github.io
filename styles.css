@@ -279,18 +279,19 @@ footer {
 }
 
 #hello {
-  font-size: 2vw;
+  font-size: 24px;
   margin-bottom: 2px;
+  font-weight: 400;
 }
 
 #sourav {
-  font-size: 4vw;
-  font-weight: 600;
+  font-size: 56px;
+  font-weight: 700;
 }
 
 .home-text {
   margin-top: 5px;
-  font-size: 3vw;
+  font-size: 42px;
   font-weight: 600;
 }
 
@@ -318,6 +319,19 @@ footer {
  {
   margin-top: 24px;
   width: 90%;
+}
+
+.section-title{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.section-sub-title{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 16px;
 }
 
 #socials {
@@ -471,18 +485,25 @@ footer {
 
 .project-wrapper:hover{
     scale: 1.05;
-}
+  }
+   
 
 .project-img-container {
   overflow: hidden;
   background: #ab8bff;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 700px;
 }
 
 .project-img {
-  margin: 32px 32px -32px 32px;
-  width: 80%;
-  rotate: 2.5deg;
+  margin-top: 16px;
+  margin-bottom: -32px;
+  width: 85%;
+  transform: rotateX(-10deg);
+  transform: rotateY(25deg);
   border-radius: 8px;
 }
 
@@ -541,8 +562,6 @@ footer {
   color: #ab8bff;
 }
 
-
-
 .contact-wrapper{
     margin-top: 48px;
     width: 100%;
@@ -581,10 +600,10 @@ footer {
 }
 
 #see-all-projects{
-    margin-top: 24px;
+    margin-top: 48px;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 #see-all-projects-btn{
@@ -593,6 +612,8 @@ footer {
     border-radius: 4px;
     color: #000;
     transition: all 0.3s;
+    font-size: 20px;
+    text-align: center;
 }
 #see-all-projects-btn:hover{
     background: #ab8bff;
@@ -625,17 +646,22 @@ footer {
   }
 
   #hello {
-    font-size: 5vw;
+    font-size: 20px;
   }
 
   #sourav {
-    font-size: 7vw;
+    font-size: 36px;
   }
   .home-text {
-    font-size: 6vw;
+    font-size: 28px;
   }
   .home-btn {
-    padding: 8px 16px;
+    font-size: 16px;
+  }
+  #see-all-projects{
+    margin-top: 32px;
+  }
+  #see-all-projects-btn{
     font-size: 16px;
   }
   .wrapper {
@@ -698,5 +724,13 @@ footer {
 .contact-title{
     font-size: 28px;
 }
+
+.section-title{
+  font-size: 28px;
+}
+.section-sub-title{
+  font-size: 12px;
+}
+
 }
 
