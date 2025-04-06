@@ -427,7 +427,7 @@ footer {
   margin-top: 24px;
 }
 
-.card-title i  {
+.card-title i{
   font-size: 24px;
   padding: 8px;
   border-radius: 50%;
@@ -583,7 +583,13 @@ footer {
 
 .contact-title{
     font-size: 32px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.contact-sub-title{
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .contact-description{
@@ -618,6 +624,33 @@ footer {
 #see-all-projects-btn:hover{
     background: #ab8bff;
     color: #fff;
+}
+
+.highlighted-text{
+  font-weight: bold;
+  color: #ab8bff;
+}
+
+.who-am-i-text{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.education-year{
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.institution{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.education-type{
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -722,7 +755,13 @@ footer {
 }
 
 .contact-title{
-    font-size: 28px;
+    font-size: 24px;
+}
+
+.contact-sub-title{
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .section-title{
@@ -730,6 +769,10 @@ footer {
 }
 .section-sub-title{
   font-size: 12px;
+}
+
+#contact-right{
+  margin-bottom: 32px;
 }
 
 }
