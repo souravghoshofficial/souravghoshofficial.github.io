@@ -402,9 +402,9 @@ footer {
   animation: scroll 20s linear infinite;
 }
 
-#showcase:hover ul{
+/* #showcase:hover ul{
   animation-play-state: paused;
-}
+} */
 
 @keyframes scroll {
   to{
