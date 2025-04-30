@@ -20,6 +20,8 @@
   </head>
   <body>
     <main id="main">
+
+      <div id="overlay"></div>
       
       <!-- Sidenav hambarger Menu -->
       <div id="ham-wrapper">
@@ -46,12 +48,22 @@
 
       <!-- Sidenav for mobile screen -->
       <aside id="sidenav">
-        <div>
-          <a class="sidenav-item" href="#home">Home</a>
-          <a class="sidenav-item" href="#about">About</a>
-          <a class="sidenav-item" href="#skills">Skills</a>
-          <a class="sidenav-item" href="#projects">Projects</a>
-          <a class="sidenav-item" href="#contact">Contact</a>
+        <div id="nav">
+          <img width="96px" src="assets/profile-pic.png" alt="">
+          <h2 id="sidenav-name">Sourav Ghosh</h2>
+          <div id="social-icons">
+            <a href="https://linkedin.com/in/souravghosh121"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://x.com/souravghosh121"><i class="ri-twitter-x-fill"></i></a>
+            <a href="https://github.com/souravghoshofficial"><i class="ri-github-fill"></i></a>
+            <a href="https://instagram.com/souravghoshofficial"><i class="ri-instagram-fill"></i></a>
+           </div>
+        <div id="sidenav-items-container">
+          <a class="sidenav-item" href="#home"><i class="ri-home-4-line"></i>Home</a>
+          <a class="sidenav-item" href="#about"><i class="ri-user-3-line"></i>About</a>
+          <a class="sidenav-item" href="#skills"><i class="ri-tools-line"></i>Skills</a>
+          <a class="sidenav-item" href="#projects"><i class="ri-code-box-line"></i>Projects</a>
+          <a class="sidenav-item" href="#contact"><i class="ri-mail-line"></i>Contact</a>
+        </div>
         </div>
       </aside>
 
@@ -152,7 +164,7 @@
               <div id="about-me">
                 <h3 class="card-title"> <i class="ri-user-3-line"></i>Who Am I</h3>
                 <p class="who-am-i-text">Hi! I'm Sourav Ghosh, a passionate MCA student at <a class="highlighted-text" href="https://jadavpuruniversity.in" target="_blank">Jadavpur University</a>, <br> with a love for building cool stuff with code and a dream of becoming a great software engineer.</p>
-                <p class="who-am-i-text">I'm experienced in full-stack web development and have built projects using <span class="highlighted-text">React</span>, <span class="highlighted-text">Node</span>.<span class="highlighted-text">js</span>, <span class="highlighted-text">Express</span>.<span class="highlighted-text">js</span> and <span class="highlighted-text">PostgreSQL</span>. I love turning ideas into real applications that people can use.</p>
+                <p class="who-am-i-text">I'm experienced in full-stack web development and have built projects using <span class="highlighted-text">React</span>, <span class="highlighted-text">Node</span>.<span class="highlighted-text">js</span>, <span class="highlighted-text">Express</span>.<span class="highlighted-text">js</span> and <span class="highlighted-text">MongoDB</span>. I love turning ideas into real applications that people can use.</p>
               </div>
               <div id="education">
                 <h3 class="card-title"> <i class="ri-graduation-cap-fill"></i>Education</h3>
@@ -187,33 +199,90 @@
             <div class="skill-wrapper">
               <h3 class="card-title"><i class="ri-code-box-fill"></i> Programming Languages</h3>
               <div  class="skill-logo">
-                <img src="./assets/c-logo.svg" alt="c programming language">
-                <img src="./assets/cpp-logo.svg" alt="cpp programming language">
-                <img src="./assets/js-logo.svg" alt="javascript programming language">
-                <img src="./assets/python-logo.svg" alt="python programming language">
+                <div class="skill">
+                  <img src="./assets/c-logo.svg" alt="c programming language">
+                  <span>C</span>
+                </div>
+                <div class="skill">
+                  <img src="./assets/cpp-logo.svg" alt="cpp programming language">
+                  <span>C++</span>
+                </div>
+                <div class="skill"> 
+                  <img src="./assets/js-logo.svg" alt="javascript programming language">
+                  <span>JavaScript</span>
+                </div>
+            <div class="skill">
+              <img src="./assets/python-logo.svg" alt="python programming language">
+              <span>Python</span>
+            </div>
+               
+             
               </div>
             </div>
             <div class="skill-wrapper">
               <h3 class="card-title"><i class="ri-computer-fill"></i> Web Development</h3>
               <div  class="skill-logo">
+               <div class="skill">
                 <img src="./assets/html-logo.svg" alt="html 5 logo">
-                <img src="./assets/css-logo.svg" alt="css 3 logo">
+                <span>HTML</span>
+               </div>
+                <div class="skill">
+                  <img src="./assets/css-logo.svg" alt="css 3 logo">
+                  <span>CSS</span>
+                </div>
+               <div class="skill">
                 <img src="./assets/js-logo.svg" alt="javascript programming language">
+                <span>JavaScript</span>
+               </div>
+              <div class="skill">
                 <img src="./assets/node-js-logo.svg" alt="node js logo">
-                <img src="./assets/react-logo.svg" alt="react logo">
-                <img src="./assets/redux-icon.svg" alt="redux logo">
-                <img src="./assets/tailwindcss-logo.svg" alt="tailwindcss logo">
+                <span>Node JS</span>
+              </div>
+                <div class="skill">
+                  <img src="./assets/react-logo.svg" alt="react logo">
+                  <span>React</span>
+                </div>
+                <div class="skill">
+                  <img src="./assets/redux-icon.svg" alt="redux logo">
+                  <span>Redux</span>
+                </div>
+                <div class="skill">
+                  <img src="./assets/tailwindcss-logo.svg" alt="tailwindcss logo">
+                  <span>TailwindCSS</span>
+                </div>
+              <div class="skill">
                 <img src="./assets/express-js-logo.svg" alt="express js logo">
+                <span>Express JS</span>
+              </div>
+              <div class="skill">
+                <img src="./assets/mongodb-icon.svg" alt="mongodb logo">
+                <span>MongoDB</span>
+              </div>
+              <div class="skill">
                 <img src="./assets/postgresql-icon.svg" alt="postgresql logo">
+                <span>PostgreSQL</span>
+              </div>
               </div>
             </div>
             <div class="skill-wrapper">
               <h3 class="card-title"><i class="ri-terminal-box-fill"></i> Developer Tools</h3>
               <div  class="skill-logo">
-                <img src="./assets/vs-code-logo.svg" alt="vs code logo">
-                <img src="./assets/git-logo.svg" alt="git logo">
-                <img src="./assets/github-logo.svg" alt="github logo">
-                <img src="./assets/postman-icon.svg" alt="postman logo">
+                <div class="skill">
+                  <img src="./assets/vs-code-logo.svg" alt="vs code logo">
+                  <span>VS Code</span>
+                </div>
+                <div class="skill">
+                  <img src="./assets/git-logo.svg" alt="git logo">
+                  <span>Git</span>
+                </div>
+                <div class="skill">
+                  <img src="./assets/github-logo.svg" alt="github logo">
+                  <span>GitHub</span>
+                </div>
+                <div class="skill">
+                  <img src="./assets/postman-icon.svg" alt="postman logo">
+                  <span>Postman</span>
+                </div>
               </div>
             </div>
         </div>
@@ -288,6 +357,7 @@
         </div>
       </section>
 
+      <!-- My Approach Section -->
       <section id="my-approach">
         <div id="my-approach-section">
           <h5 style="margin-top: 56px;" class="section-sub-title">Work with me</h5>
