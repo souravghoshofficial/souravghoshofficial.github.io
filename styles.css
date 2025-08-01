@@ -197,7 +197,7 @@ aside #nav {
 
 .sidenav-item{
   width: 100%;
-  padding: 4px 8px;
+  padding: 4px 16px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -675,9 +675,7 @@ footer {
   margin-left: -8px;
 }
 
-#express{
-  background-color: #fff;
-}
+
 
 .project-title {
   margin-top: 16px;
