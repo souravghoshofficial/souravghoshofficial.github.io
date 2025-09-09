@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sourav Ghosh | Portfolio</title>
-    <meta name="title" content="Sourav Ghosh | Portfolio | Web Developer">
-<meta name="description" content="I'm Sourav Ghosh, a passionate MCA student from Jadavpur University, aspiring software engineer, and full-stack web developer. Check out my projects and resume.">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="keywords" content="Sourav Ghosh, Web Developer, Portfolio, Full Stack Developer, React Developer, MCA Student, Jadavpur University, HTML CSS JavaScript Projects, Software Engineer, Frontend Developer, Backend Developer, MERN Stack, Kolkata">
+  <!-- Title: Keep under 60 characters, unique, with main keyword -->
+  <title>Sourav Ghosh | Full-Stack Web Developer Portfolio</title>
 
-<meta name="author" content="Sourav Ghosh">
+  <!-- Meta Title -->
+  <meta name="title" content="Sourav Ghosh - Full-Stack Web Developer & MCA Student" />
 
-    <link rel="icon" type="image/x-icon" href="./assets/profile-pic.png">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <!-- Meta Description (under 160 characters) -->
+  <meta name="description" content="Portfolio of Sourav Ghosh, an MCA student at Jadavpur University and full-stack web developer skilled in React, Node.js, and MERN stack." />
+
+  <!-- Keywords (not very impactful now but okay to keep) -->
+  <meta name="keywords" content="Sourav Ghosh, Web Developer Portfolio, Full Stack Developer, React Developer, MCA Jadavpur, Software Engineer, MERN Stack, Frontend Backend Developer" />
+
+  <!-- Author -->
+  <meta name="author" content="Sourav Ghosh" />
+
+  <!-- Open Graph for social media -->
+  <meta property="og:title" content="Sourav Ghosh | Full-Stack Web Developer" />
+  <meta property="og:description" content="Explore my portfolio: projects, resume, and journey as an MCA student & aspiring software engineer." />
+  <meta property="og:image" content="https://souravghosh.me/assets/profile-pic.png" />
+  <meta property="og:url" content="https://souravghosh.me" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sourav Ghosh | Full-Stack Web Developer" />
+  <meta name="twitter:description" content="Aspiring software engineer & full-stack web developer. Check out my projects and skills." />
+  <meta name="twitter:image" content="https://souravghosh.me/assets/profile-pic.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sourav Ghosh",
+  "url": "https://souravghosh.me",
+  "image": "https://souravghosh.me/assets/profile-pic.png",
+  "jobTitle": "Full-Stack Web Developer",
+  "sameAs": [
+    "https://linkedin.com/in/souravghosh121",
+    "https://x.com/souravghosh121",
+    "https://github.com/souravghoshofficial",
+    "https://instagram.com/souravghoshofficial"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Jadavpur University",
+    "url": "https://jadavpuruniversity.in"
+  }
+}
+</script>
+
+
+  <!-- Fonts/Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
   <body>
     <main id="main">
 
@@ -88,6 +133,7 @@
               id="profile-img"
               src="./assets/profile-pic.png"
               alt="Sourav Ghosh - Full Stack Developer"
+              loading="lazy"
             />
           </div>
         </div>
@@ -159,7 +205,7 @@
          
           <div class="wrapper">
             <div id="about-img-containter">
-              <img id="about-img" src="./assets/my-pro-img.png" alt="Sourav Ghosh - Full Stack Developer">
+              <img id="about-img" src="./assets/my-pro-img.png" alt="Sourav Ghosh - Full Stack Developer" loading="lazy">
             </div>
             <div>
               <div id="about-me">
@@ -297,7 +343,7 @@
           <div id="project-container">
              <div class="project-wrapper">
             <div class="project-img-container">
-              <img class="project-img" src="./assets/microdome.png" alt="microdome classes">
+              <img class="project-img" src="./assets/microdome.png" alt="microdome classes" loading="lazy">
             </div>
             <div class="project-text-container">
               <h3 class="project-title"><span class="microdome-text">Microdome</span></h3>
@@ -318,7 +364,7 @@
             </div>
             <div class="project-wrapper">
             <div class="project-img-container">
-              <img class="project-img" src="./assets/codesync.png" alt="CodeSync project">
+              <img class="project-img" src="./assets/codesync.png" alt="CodeSync project" loading="lazy">
             </div>
             <div class="project-text-container">
               <h3 class="project-title">CodeSync</span></h3>
@@ -337,7 +383,7 @@
             </div>
             <div class="project-wrapper">
             <div class="project-img-container">
-              <img class="project-img" src="./assets/passwordcrafter.png" alt="password crafter project">
+              <img class="project-img" src="./assets/passwordcrafter.png" alt="password crafter project" loading="lazy">
             </div>
             <div class="project-text-container">
               <h3 style="color: #10b981;" class="project-title">Password Crafter</h3>
@@ -394,6 +440,46 @@
           </div>
         </div>  
       </section>
+
+
+      <!-- Testimonials Section -->
+<section id="testimonials">
+  <div id="testimonials-section">
+    <h5 class="section-sub-title">What People Say</h5>
+    <h3 class="gradiant-text section-title">Testimonials</h3>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img class="testimonial-img" src="./assets/microdome-founder.png" alt="Founder of Microdome" loading="lazy">
+          <div>
+            <h3 class="testimonial-name">Sayan Ganguly</h3>
+            <h4 class="testimonial-role">Founder, Microdome Classes</h4>
+          </div>
+        </div>
+     <p class="testimonial-text">
+  “I am truly grateful to Sourav for creating my coaching startup’s website with such dedication and skill. 
+  Honestly, I never even imagined that I would have such a well-structured and functional platform, 
+  but Sourav turned that thought into reality.  
+<br />
+<br />
+  From building engaging quizzes, designing a smooth user interface, setting up login and enrollment pages, 
+  to seamlessly integrating the Razorpay online payment system — every detail was handled beautifully. 
+  His responsiveness whenever I faced issues or needed troubleshooting was remarkable; 
+  he was always there with a quick and effective solution.  
+<br />
+<br />
+  Despite being in the early stages of his career, his genuine passion and commitment to quality 
+  exceeded my expectations in every way.  
+<br/ >
+<br />
+  Thank you so much, Sourav. I highly recommend him to anyone looking for a reliable developer.”  
+</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <!-- Contact Section -->
       <section id="contact">

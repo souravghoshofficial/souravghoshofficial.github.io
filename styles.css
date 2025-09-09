@@ -29,14 +29,30 @@ main {
 }
 
 @keyframes wave-animation {
-  0% { transform: rotate( 0.0deg); }
- 10% { transform: rotate(14.0deg); }
- 20% { transform: rotate(-8.0deg); }
- 30% { transform: rotate(14.0deg); }
- 40% { transform: rotate(-4.0deg); }
- 50% { transform: rotate(10.0deg); }
- 60% { transform: rotate( 0.0deg); }
-100% { transform: rotate( 0.0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .wave {
@@ -45,12 +61,11 @@ main {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
-  font-size: 1.25em; 
+  font-size: 1.25em;
 }
 
-
-.microdome-text{
-  background: linear-gradient(to left, #DB3B7E, #3EB5A2 );
+.microdome-text {
+  background: linear-gradient(to left, #db3b7e, #3eb5a2);
   background-clip: text;
   color: transparent;
 }
@@ -163,7 +178,7 @@ aside {
   border-left: 1px solid rgb(32, 32, 32);
 }
 
-aside img{
+aside img {
   border-radius: 50%;
   border: 2px solid #d6c7ff;
   padding: 3px;
@@ -183,7 +198,7 @@ aside #nav {
   text-align: center;
 }
 
-#sidenav-items-container{
+#sidenav-items-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,11 +206,11 @@ aside #nav {
   gap: 12px;
 }
 
-#sidenav-name{
+#sidenav-name {
   font-size: 30px;
 }
 
-.sidenav-item{
+.sidenav-item {
   width: 100%;
   padding: 4px 16px;
   border-radius: 5px;
@@ -205,17 +220,17 @@ aside #nav {
   font-size: 18px;
 }
 
-.sidenav-item i{
+.sidenav-item i {
   font-size: 20px;
 }
 
-#social-icons{
+#social-icons {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-#social-icons a{
+#social-icons a {
   padding: 8px;
   background-color: #0f172a;
   border-radius: 50%;
@@ -401,7 +416,7 @@ footer {
   background: transparent;
   color: white;
 }
-#resume-btn:hover{
+#resume-btn:hover {
   background-color: #ab8bff;
   border: 1px solid #ab8bff;
 }
@@ -674,8 +689,6 @@ footer {
 .tech-stack-3 {
   margin-left: -8px;
 }
-
-
 
 .project-title {
   margin-top: 16px;
@@ -1033,3 +1046,61 @@ footer {
     font-size: 16px;
   }
 }
+
+#testimonials-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 5px 24px 0 rgba(31, 38, 135, 0.37);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  text-align: left;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+  border: 1px solid #ab8bff;
+  background-color: #f4cccc;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 8px 0 0;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  font-style: italic;
+}
+
+
